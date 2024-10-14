@@ -93,6 +93,7 @@ public class BukkitRegionContainer extends RegionContainer {
                 }
             }
         }, plugin);
+
         Bukkit.getGlobalRegionScheduler().runAtFixedRate(plugin, task -> {
             cache.invalidateAll();
         }, CACHE_INVALIDATION_INTERVAL, CACHE_INVALIDATION_INTERVAL);
